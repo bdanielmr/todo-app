@@ -3,3 +3,4 @@
 **/dist/**
 **/.git/**
 **/public/**
+**/src/reportWebVitals.ts**
