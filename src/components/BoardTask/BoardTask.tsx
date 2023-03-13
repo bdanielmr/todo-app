@@ -118,7 +118,11 @@ export function BoardTask({ items }: Props) {
           <Button variant="outlined" onClick={() => setFilterPriority('')}>
             Mostrar Todos
           </Button>
-          <Button variant="contained" onClick={addItem}>
+          <Button
+            variant="contained"
+            onClick={addItem}
+            data-testid="add-new-item-button"
+          >
             Agregar Nuevo Item
           </Button>
         </Box>
