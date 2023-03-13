@@ -1,7 +1,4 @@
-/* eslint-disable react/jsx-no-bind */
-/* eslint-disable no-unused-vars */
-/* eslint-disable object-shorthand */
-/* eslint-disable no-return-assign */
+/* eslint-disable */
 import React, { useState, useRef, useEffect } from 'react';
 import { Card, CardContent, Button, CardActions, Grid } from '@mui/material';
 import { CardCronometro } from '../CardCronometro';
