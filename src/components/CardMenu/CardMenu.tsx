@@ -1,5 +1,4 @@
-/* eslint-disable no-nested-ternary */
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { Button, Menu, MenuItem } from '@mui/material';
 

@@ -1,10 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-shadow */
-/* eslint-disable no-undef */
-/* eslint-disable radix */
-/* eslint-disable react/require-default-props */
-/* eslint-disable no-nested-ternary */
-/* eslint-disable react/button-has-type */
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
 
