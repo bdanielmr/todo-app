@@ -1,4 +1,4 @@
-visit: https://todo-7zv2pa8ih-bdanielmr.vercel.app/
+visit: https://todo-app-rust-mu.vercel.app/
 ## `Todo-app`
 ###### `● Crear una tarea`
 ###### `● Modificar una tarea (descripción de la tarea y duración)`
