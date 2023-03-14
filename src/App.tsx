@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { BoardTask } from './components/BoardTask';
+import StoreProvider from './store/StoreProvider';
 
 type priority = '' | 'bajo' | 'medio' | 'largo';
 function App() {
@@ -39,10 +40,12 @@ function App() {
     },
   ];
   return (
-    <Box>
-      <p>todo app </p>
-      <BoardTask items={items} />
-    </Box>
+    <StoreProvider>
+      <Box>
+        <p>todo app </p>
+        <BoardTask items={items} />
+      </Box>
+    </StoreProvider>
   );
 }
 
