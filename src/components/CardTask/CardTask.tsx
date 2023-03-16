@@ -7,7 +7,7 @@ import React, {
   SetStateAction,
 } from 'react';
 import { StoreContext } from '../../store/StoreProvider';
-import { CardItem } from '../CardItem';
+import { CardItem } from '../CardItem/CardItem';
 import { Task } from '../../utils/types';
 
 interface TaskProps {
