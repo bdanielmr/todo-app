@@ -1,10 +1,6 @@
 /* eslint-disable */
 import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { Grid, Box, Hidden, useMediaQuery, Theme } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 
 import { StoreContext } from '../store/StoreProvider';
 import { StoreContextType, HomeType, Task } from '../utils/types';
@@ -58,27 +54,6 @@ function HomeTask({ children }: LayoutProps) {
   };
   return (
     <Box style={{ display: 'flex' }}>
-      <AppBar position="fixed">
-        <Toolbar>
-          <Typography variant="h6" noWrap>
-            {dataHome.titleHeader}
-          </Typography>
-
-          {dataHome.sidebarItems.map(value => (
-            <Link to={value.router ?? ''}>
-              <Typography
-                key={value.id}
-                sx={{ marginLeft: 10 }}
-                variant="h6"
-                noWrap
-              >
-                {value.value}
-              </Typography>
-            </Link>
-          ))}
-        </Toolbar>
-      </AppBar>
-
       <Box
         sx={{
           width: '100%',

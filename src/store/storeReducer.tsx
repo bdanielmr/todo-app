@@ -71,6 +71,12 @@ const initialStore: AppState = {
         value: 'Task History',
         router: '/history-task',
       },
+      {
+        id: 'Task Chart',
+        label: 'Task Chart',
+        value: 'Task Chart',
+        router: '/chart-task',
+      },
     ],
   },
 };

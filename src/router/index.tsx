@@ -1,17 +1,13 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-unused-vars */
-import React, { useContext } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { routes } from './routers';
+import { HeaderTasks } from '../components/HeaderTask/HeaderTask';
 
 export default function ViewsRouter() {
   return (
     <Router>
+      <HeaderTasks />
       <Views />
     </Router>
   );

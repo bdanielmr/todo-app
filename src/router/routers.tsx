@@ -1,6 +1,7 @@
 import React from 'react';
 import { HistoryTasks } from '../views/HistoryTask';
 import { HomeTask } from '../views/HomeTask';
+import { ChartTask } from '../views/ChartTask';
 
 export type RoutesTypes = {
   name: string;
@@ -22,6 +23,13 @@ export const routes: RoutesTypes[] = [
     url: '/history-task',
     path: '/history-task',
     component: HistoryTasks,
+    exact: true,
+  },
+  {
+    name: 'chartTask',
+    url: '/chart-task',
+    path: '/chart-task',
+    component: ChartTask,
     exact: true,
   },
 ];
