@@ -33,14 +33,11 @@ export const CardTask: FC<TaskProps> = ({
   tasks,
   setTasks,
 }) => {
-  console.log('GAAAA', task);
   const { dispatch, state } = useContext(StoreContext)!;
   const { dataBoardTask } = state;
   const [title, setTitle] = useState(name);
   const [description, setDescription] = useState('Descripción');
   const [finishTime, setFinishTime] = useState<number | null>(null);
-  console.log('uqe tine', dataBoardTask);
-  console.log('aqui  llega a task', tasks);
   const handleTitleChange = (newTitle: string) => {
     setTitle(newTitle);
   };
@@ -50,7 +47,6 @@ export const CardTask: FC<TaskProps> = ({
   };
   const handlUpdateTime = (time: number) => {
     setFinishTime(time);
-    console.log('vertime', time);
     dispatch({
       type: 'UPDATE_TASK',
       payload: {
@@ -68,7 +64,6 @@ export const CardTask: FC<TaskProps> = ({
     setTasks(updatedTasks);
   };
   const handleFinishTime = (time: number) => {
-    console.log('finish time', time);
     dispatch({
       type: 'UPDATE_TASK',
       payload: {

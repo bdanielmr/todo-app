@@ -1,7 +1,5 @@
 /* eslint-disable */
 import React, { FC, useState, useEffect, useRef } from 'react';
-import { Task } from '../../utils/types';
-
 interface CardProps {
   id: number;
   title?: string;
