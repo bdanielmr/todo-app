@@ -25,7 +25,7 @@ const HeaderTasks = () => {
         </Typography>
 
         {dataHome.sidebarItems.map(value => (
-          <Link to={value.router ?? ''}>
+          <a href={value.router ?? ''}>
             <Typography
               key={value.id}
               sx={{ marginLeft: 5 }}
@@ -34,7 +34,7 @@ const HeaderTasks = () => {
             >
               {value.value}
             </Typography>
-          </Link>
+          </a>
         ))}
       </Toolbar>
     </AppBar>

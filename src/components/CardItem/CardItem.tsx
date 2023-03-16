@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { Button } from '@mui/material';
 import React, { FC, useState, useEffect, useRef } from 'react';
 interface CardProps {
   id: number;
@@ -174,27 +175,45 @@ const CardItem: FC<CardProps> = ({
       )}
       <div>
         {isTimerRunning ? (
-          <button
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              width: 100,
+              margin: 1,
+            }}
             disabled={isFinished}
             onClick={() => setIsTimerRunning(!isTimerRunning)}
           >
             Pausar
-          </button>
+          </Button>
         ) : (
           !isFinished &&
           (hasSelectedOption || timer !== 0) && ( // Muestra el botón de inicio si se ha seleccionado una opción o si el tiempo es diferente de 00:00:00
-            <button
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                width: 100,
+                margin: 1,
+              }}
               disabled={isFinished}
               onClick={() => setIsTimerRunning(!isTimerRunning)}
             >
               Iniciar
-            </button>
+            </Button>
           )
         )}
         {isTimerRunning &&
           !isFinished &&
           (hasSelectedOption || timer !== 0) && ( // Muestra el botón de completado si se ha seleccionado una opción o si el tiempo es diferente de 00:00:00
-            <button
+            <Button
+              variant="contained"
+              sx={{
+                margin: 1,
+                width: 120,
+              }}
+              color="primary"
               onClick={() => {
                 setIsTimerRunning(false);
                 setIsTaskCompleted(true);
@@ -207,7 +226,7 @@ const CardItem: FC<CardProps> = ({
               }}
             >
               Completado
-            </button>
+            </Button>
           )}
       </div>
       <div>{formatTime(timer)}</div>
