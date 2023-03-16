@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+/* eslint-disable */
 import { AppState, ActionState } from '../utils/types';
 
 const types = {

@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
 import React, { createContext, useReducer, useMemo, useEffect } from 'react';
 import storeReducer, { initialStore } from './storeReducer';
 import { AppState, ActionState, StoreContextType } from '../utils/types';
