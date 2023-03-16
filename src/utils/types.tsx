@@ -3,6 +3,7 @@ export type ItemSidebar = {
   id: string;
   label: string;
   value: string;
+  router?: string;
 };
 
 export type TimeTask = {

@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -64,14 +65,16 @@ function HomeTask({ children }: LayoutProps) {
           </Typography>
 
           {dataHome.sidebarItems.map(value => (
-            <Typography
-              key={value.id}
-              sx={{ marginLeft: 10 }}
-              variant="h6"
-              noWrap
-            >
-              {value.value}
-            </Typography>
+            <Link to={value.router ?? ''}>
+              <Typography
+                key={value.id}
+                sx={{ marginLeft: 10 }}
+                variant="h6"
+                noWrap
+              >
+                {value.value}
+              </Typography>
+            </Link>
           ))}
         </Toolbar>
       </AppBar>
