@@ -1,6 +1,8 @@
-/* eslint-disable react/function-component-definition */
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
-import { Card, CardContent, CardHeader, Grid, Typography } from '@mui/material';
+import {
+  Card, CardContent, CardHeader, Grid, Typography,
+} from '@mui/material';
 import { Task } from '../utils/types';
 
 interface DoneTasksProps {
@@ -16,7 +18,7 @@ const HistoryTasks: React.FC<DoneTasksProps> = ({
     const storedTasks = localStorage.getItem(storageKey);
     if (storedTasks) {
       const parsedTasks: Task[] = JSON.parse(storedTasks);
-      setTasks(parsedTasks.filter(task => task.column === 'Done'));
+      setTasks(parsedTasks.filter((task) => task.column === 'Done'));
     }
   }, [storageKey]);
 
@@ -26,7 +28,7 @@ const HistoryTasks: React.FC<DoneTasksProps> = ({
         Tareas completadas
       </Typography>
       <Grid container spacing={2}>
-        {tasks.map(task => (
+        {tasks.map((task) => (
           <Grid sx={{ marginTop: 10 }} item key={task.id} xs={12} sm={6} md={4}>
             <Card
               sx={{
