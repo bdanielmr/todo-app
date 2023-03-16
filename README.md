@@ -1,5 +1,13 @@
 visit: https://todo-app-rust-mu.vercel.app/
 ## `Todo-app`
+New Dashboard
+
+<img width="1437" alt="Captura de pantalla 2023-03-16 a la(s) 09 28 07" src="https://user-images.githubusercontent.com/50649935/225650780-245f0a1b-dd85-4513-9a14-f09dd262c22e.png">
+
+<img width="1437" alt="Captura de pantalla 2023-03-16 a la(s) 09 28 18" src="https://user-images.githubusercontent.com/50649935/225650816-4fad5af5-55b5-4bde-92db-068790ec2791.png">
+
+<img width="1437" alt="Captura de pantalla 2023-03-16 a la(s) 09 28 25" src="https://user-images.githubusercontent.com/50649935/225650837-3630e430-7ba8-434d-bbe8-2fd1d93ed11f.png">
+
 ###### `● Crear una tarea`
 ###### `● Modificar una tarea (descripción de la tarea y duración)`
 ###### `● Eliminar una tarea`
@@ -9,6 +17,7 @@ visit: https://todo-app-rust-mu.vercel.app/
 ###### `● Marcar la tarea en curso como finalizada`
 ###### `● Ver el historial de tareas completadas`
 
+old Dashboard
 ![Captura de pantalla 2023-03-13 a la(s) 11 26 18](https://user-images.githubusercontent.com/50649935/224765184-a38345af-4de1-46a2-9481-dc9c3ba0dd35.png)
 
 
