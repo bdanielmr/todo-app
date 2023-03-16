@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/function-component-definition */
-/* eslint-disable max-len */
+/* eslint-disable */
 import React, { useState, FC, Dispatch, SetStateAction } from 'react';
 import { Grid } from '@mui/material';
 import { StoreContext } from '../../store/StoreProvider';

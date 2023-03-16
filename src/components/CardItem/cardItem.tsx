@@ -1,9 +1,4 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/function-component-definition */
+/* eslint-disable */
 import React, { FC, useState, useEffect, useRef } from 'react';
 import { Task } from '../../utils/types';
 
