@@ -1,13 +1,13 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { HomeTask } from './views/HomeTask';
 import StoreProvider from './store/StoreProvider';
+import ViewsRouter from './router';
 
 function App() {
   return (
     <StoreProvider>
       <Box>
-        <HomeTask />
+        <ViewsRouter />
       </Box>
     </StoreProvider>
   );
