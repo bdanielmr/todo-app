@@ -53,7 +53,6 @@ const BoardTask: FC<BoardTaskProps> = ({ initialTasks, tasks, setTasks }) => {
     })();
 
     updatedTasks.splice(targetIndex, 0, { ...sourceTask, column: columnName });
-    console.log('updatedTasksupdatedTasks', updatedTasks);
     localStorage.setItem('dataBoardTask', JSON.stringify(updatedTasks));
     setTasks(updatedTasks);
     setDraggedOverIndex(null);

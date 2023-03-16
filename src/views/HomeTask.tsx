@@ -40,7 +40,6 @@ function HomeTask({ children }: LayoutProps) {
       type: 'todos',
     } as Task;
     setLengthTask(lengthTask + 1);
-    console.log('entra', newItem);
     dispatch({
       type: 'CREATE_TASK',
       payload: [...dataBoard, newItem],
