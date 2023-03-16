@@ -1,7 +1,4 @@
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/function-component-definition */
-/* eslint-disable react/require-default-props */
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
 import React, {
   FC,
   useState,
