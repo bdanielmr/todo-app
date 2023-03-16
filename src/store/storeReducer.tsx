@@ -18,7 +18,7 @@ const initialStore: AppState = {
             name: 'task 1',
             column: 'Done',
             title: 'new title',
-            description: 'new desxcription',
+            description: 'task description',
             completed: true,
             type: 'todos',
             time: {
@@ -63,11 +63,13 @@ const initialStore: AppState = {
         id: 'Home',
         label: 'Home',
         value: 'Home',
+        router: '/',
       },
       {
         id: 'Task History',
         label: 'Task History',
         value: 'Task History',
+        router: '/history-task',
       },
     ],
   },
